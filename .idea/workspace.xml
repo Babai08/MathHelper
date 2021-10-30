@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/Ei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/Factorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/Zeta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ysotoxic/examples/factorial/FactorialExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ysotoxic/examples/factorial/FactorialExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ysotoxic/examples/factorial/FactorialExample.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +67,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RunManager">
-    <configuration name="FactorialExample" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.ysotoxic.examples.factorial.FactorialExample" />
+    <configuration name="Run" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="dev.Babai08.mathhelper.Main" />
       <module name="MathHelper" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,6 +87,7 @@
       <workItem from="1635510005897" duration="3599000" />
       <workItem from="1635539737109" duration="381000" />
       <workItem from="1635540480682" duration="9743000" />
+      <workItem from="1635581748894" duration="1391000" />
     </task>
     <servers />
   </component>
