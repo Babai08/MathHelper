@@ -1,6 +1,4 @@
-package dev.Babai08.mathhelper.utils;
-
-import static dev.Babai08.mathhelper.utils.MathUtils.roundDouble;
+package dev.babai08.mathhelper.utils;
 
 public class Zeta {
 
@@ -26,7 +24,7 @@ public class Zeta {
         } else if (n == 1) {
             zetaResult = Double.POSITIVE_INFINITY;
         }
-        result = roundDouble(zetaResult, 5);
+        result = MathUtils.roundDouble(zetaResult, 5);
         return result;
     }
 
@@ -41,7 +39,7 @@ public class Zeta {
         } else if (n == -1) {
             zetaResult = -0.0833333333333333333333333;
         }
-        result = roundDouble(zetaResult, 5);
+        result = MathUtils.roundDouble(zetaResult, 5);
         return result;
     }
 }

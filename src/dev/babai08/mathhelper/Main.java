@@ -1,6 +1,6 @@
-package dev.Babai08.mathhelper;
+package dev.babai08.mathhelper;
 
-import dev.Babai08.mathhelper.utils.*;
+import dev.babai08.mathhelper.utils.*;
 
 public class Main {
 

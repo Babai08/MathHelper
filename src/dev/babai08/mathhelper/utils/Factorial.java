@@ -1,4 +1,4 @@
-package dev.Babai08.mathhelper.utils;
+package dev.babai08.mathhelper.utils;
 
 public class Factorial {
 

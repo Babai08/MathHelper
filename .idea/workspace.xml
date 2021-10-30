@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="MathHelper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/Zeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/Zeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/ExponentialIntegral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/ExponentialIntegral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Factorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/MathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/MathUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/Zeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Zeta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Run" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="dev.Babai08.mathhelper.Main" />
+      <option name="MAIN_CLASS_NAME" value="dev.babai08.mathhelper.Main" />
       <module name="MathHelper" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,6 +90,8 @@
       <workItem from="1635590196138" duration="500000" />
       <workItem from="1635593085064" duration="182000" />
       <workItem from="1635593271886" duration="643000" />
+      <workItem from="1635598197335" duration="89000" />
+      <workItem from="1635598289743" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="MathHelper">
       <created>1635591124278</created>
