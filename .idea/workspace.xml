@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/MathUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/Ei.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/Babai08/mathhelper/utils/ExponentialIntegral.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

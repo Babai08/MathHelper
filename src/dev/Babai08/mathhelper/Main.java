@@ -1,9 +1,6 @@
 package dev.Babai08.mathhelper;
 
-import dev.Babai08.mathhelper.utils.ExponentialIntegral;
-import dev.Babai08.mathhelper.utils.Factorial;
-import dev.Babai08.mathhelper.utils.MathUtils;
-import dev.Babai08.mathhelper.utils.Zeta;
+import dev.Babai08.mathhelper.utils.*;
 
 public class Main {
 
@@ -19,7 +16,7 @@ public class Main {
         }
 
         System.out.println("MATH : END : " + result);
-        System.out.println("EI(" + -1 + ") = " + ExponentialIntegral.Ei(-1));
+        System.out.println("Ei(" + -1 + ") = " + ExponentialIntegral.Ei(-1));
         System.out.println("zeta(" + -1 + ") = " + Zeta.zetaDefiner(-1));
     }
 }
