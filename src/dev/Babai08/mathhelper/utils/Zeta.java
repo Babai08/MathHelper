@@ -1,5 +1,7 @@
 package dev.Babai08.mathhelper.utils;
 
+import static dev.Babai08.mathhelper.utils.MathUtils.roundDouble;
+
 public class Zeta {
 
     public static double zetaDefiner(double n) {
@@ -15,20 +17,21 @@ public class Zeta {
 
     public static double zetaStandard(double n) {
         double zetaResult = 0;
+        double result;
 
         if (n > 1) {
             for (int m = 1; m <= 28391621; m++) {
                 zetaResult += 1 / Math.pow(m, n);
             }
-            //round this to 4 or 5 decimal places
         } else if (n == 1) {
             zetaResult = Double.POSITIVE_INFINITY;
         }
-
-        return zetaResult;
+        result = roundDouble(zetaResult, 5);
+        return result;
     }
 
     public static double zetaExtended(double n) {
+        double result;
         double zetaResult = 0;
 
         if (n < 0 && n % 2 == 0) {
@@ -38,6 +41,7 @@ public class Zeta {
         } else if (n == -1) {
             zetaResult = -0.0833333333333333333333333;
         }
-        return zetaResult;
+        result = roundDouble(zetaResult, 5);
+        return result;
     }
 }
