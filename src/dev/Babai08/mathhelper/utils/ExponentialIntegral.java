@@ -1,12 +1,12 @@
 package dev.Babai08.mathhelper.utils;
 
-public class Ei {
+public class ExponentialIntegral {
 
-    public static double Ei(double n, double gamma) {
+    public static double Ei(double n) {
         double EiResult = 0;
 
         if (n >= -34 && n <= 34) {
-            EiResult += gamma + Math.log(java.lang.Math.abs(n));
+            EiResult += MathUtils.gamma + Math.log(java.lang.Math.abs(n));
 
             for (int m = 1; m <= 100; m++) {
                 EiResult += Math.pow(n, m) / (m * (Factorial.factorial(m)));
