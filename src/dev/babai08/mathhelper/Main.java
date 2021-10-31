@@ -19,6 +19,6 @@ public class Main {
         System.out.println("Ei(" + -1 + ") = " + ExponentialIntegral.Ei(-1));
         System.out.println("zeta(" + -1 + ") = " + Zeta.zetaDefiner(-1));
         System.out.println("Omega e^ Omega = " + MathUtils.omega * Math.exp(MathUtils.omega));
-        System.out.println("Area under sine between 0 and pi is " + DefiniteIntegral.functionArea(0, Math.PI));
+        System.out.println("Area under circle between 0 and 1 is " + DefiniteIntegral.functionArea(0, 1, 1250000));
     }
 }
