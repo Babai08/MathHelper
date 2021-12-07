@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Stieltjes Constants fixed but isn't accurate after only a few numbers.">
-      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" afterDir="false" />
+    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Reworked Zeta, though it still isn't working. Added Complex numbers and basic functions within them.">
+      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Gamma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Factorial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Zeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Zeta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +104,9 @@
       <workItem from="1637118502348" duration="57000" />
       <workItem from="1637545957283" duration="309000" />
       <workItem from="1638146428438" duration="10000" />
-      <workItem from="1638834656504" duration="3688000" />
+      <workItem from="1638834656504" duration="3946000" />
+      <workItem from="1638849189103" duration="4170000" />
+      <workItem from="1638855051050" duration="3257000" />
     </task>
     <task id="LOCAL-00001" summary="MathHelper">
       <created>1635591124278</created>
@@ -146,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635757002857</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Reworked Zeta, though it still isn't working. Added Complex numbers and basic functions within them.">
+      <created>1638844598287</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638844598287</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +182,7 @@
     <MESSAGE value="Added iterations to functionArea." />
     <MESSAGE value="Added Bernoulli numbers and polynomials. Also added Stieltjes Constants, but is currently full of bugs." />
     <MESSAGE value="Stieltjes Constants fixed but isn't accurate after only a few numbers." />
-    <option name="LAST_COMMIT_MESSAGE" value="Stieltjes Constants fixed but isn't accurate after only a few numbers." />
+    <MESSAGE value="Reworked Zeta, though it still isn't working. Added Complex numbers and basic functions within them." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reworked Zeta, though it still isn't working. Added Complex numbers and basic functions within them." />
   </component>
 </project>

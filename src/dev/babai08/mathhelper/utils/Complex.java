@@ -32,15 +32,15 @@ public class Complex extends Object {
         return new Complex(x,-y);
     }
 
-    public Complex plus(Complex w) {
+    public Complex add(Complex w) {
         return new Complex(x+w.Re(),y-w.Im());
     }
 
-    public Complex minus(Complex w) {
+    public Complex sub(Complex w) {
         return new Complex(x-w.Re(), y-w.Im());
     }
 
-    public Complex times(Complex w) {
+    public Complex mul(Complex w) {
         return new Complex(x*w.Re()-y*w.Im(),x*w.Im()+y*w.Re());
     }
 

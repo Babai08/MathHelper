@@ -8,4 +8,11 @@ public class Factorial {
         else
             return (n * factorial(n-1));
     }
+
+    public static double extFactorial(double n) {
+        double result;
+
+        result = Gamma.gamma(n+1);
+        return result;
+    }
 }
