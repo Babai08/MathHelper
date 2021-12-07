@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Added Bernoulli numbers and polynomials. Also added Stieltjes Constants, but is currently full of bugs.">
+    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Stieltjes Constants fixed but isn't accurate after only a few numbers.">
+      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/StieltjesConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/StieltjesConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Zeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Zeta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,15 @@
       <workItem from="1635648543309" duration="803000" />
       <workItem from="1635675462829" duration="41000" />
       <workItem from="1635743404587" duration="6835000" />
-      <workItem from="1635755219803" duration="1641000" />
+      <workItem from="1635755219803" duration="2398000" />
+      <workItem from="1635918203699" duration="49000" />
+      <workItem from="1635918359160" duration="6429000" />
+      <workItem from="1636460152007" duration="177000" />
+      <workItem from="1636940175695" duration="117000" />
+      <workItem from="1637118502348" duration="57000" />
+      <workItem from="1637545957283" duration="309000" />
+      <workItem from="1638146428438" duration="10000" />
+      <workItem from="1638834656504" duration="3688000" />
     </task>
     <task id="LOCAL-00001" summary="MathHelper">
       <created>1635591124278</created>
@@ -130,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635750561163</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Stieltjes Constants fixed but isn't accurate after only a few numbers.">
+      <created>1635757002857</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635757002857</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +170,7 @@
     <MESSAGE value="Basic definite integral capability added." />
     <MESSAGE value="Added iterations to functionArea." />
     <MESSAGE value="Added Bernoulli numbers and polynomials. Also added Stieltjes Constants, but is currently full of bugs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Bernoulli numbers and polynomials. Also added Stieltjes Constants, but is currently full of bugs." />
+    <MESSAGE value="Stieltjes Constants fixed but isn't accurate after only a few numbers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Stieltjes Constants fixed but isn't accurate after only a few numbers." />
   </component>
 </project>

@@ -20,7 +20,7 @@ public class Main {
         System.out.println("zeta(" + -1 + ") = " + Zeta.zetaDefiner(-1));
         System.out.println("Omega e^ Omega = " + MathUtils.omega * Math.exp(MathUtils.omega));
         System.out.println("Area under circle between 0 and 1 is " + DefiniteIntegral.functionArea(0, 1, 1250000));
-        System.out.println("Bernoulli 6 is " + Bernoulli.bernoulliNumber(6));
-        System.out.println("Stieltjes 1 is " + StieltjesConstant.StieltjesGamma(1));
+        System.out.println("Bernoulli 8 is " + Bernoulli.bernoulliNumber(8));
+        System.out.println("tan(1+i) = " + new Complex(1,1).tan());
     }
 }
