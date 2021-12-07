@@ -24,5 +24,7 @@ public class Main {
         System.out.println("tan(1+i) = " + new Complex(1,1).tan());
         System.out.println("Gamma(0.5) = " + Gamma.gamma(0.5));
         System.out.println("-0.5! = " + Factorial.extFactorial(-0.5));
+        System.out.println("H_100 = " + HarmonicSeries.harmonicSeries(100));
+        System.out.println("H_1000000-ln(1000000) = " + (HarmonicSeries.harmonicSeries(1000000) - Math.log(1000000)));
     }
 }
