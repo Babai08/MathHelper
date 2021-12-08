@@ -10,12 +10,12 @@ public class Zeta {
         } else {
             zetaResult = zetaExtended(n);
         }
+
         return zetaResult;
     }
 
     public static double zetaStandard(double n) {
         double zetaResult = 0;
-        double result;
 
         if (n > 1) {
             for (int m = 1; m <= 28391621; m++) {
@@ -24,19 +24,14 @@ public class Zeta {
         } else if (n == 1) {
             zetaResult = Double.POSITIVE_INFINITY;
         }
-        result = MathUtils.roundDouble(zetaResult, 5);
-        return result;
+
+        return MathUtils.roundDouble(zetaResult, 5);
     }
 
     public static double zetaExtended(double n) {
-        double result;
         double zetaResult;
-
         zetaResult = Math.pow(2, n) * Math.pow(Math.PI, n - 1) * Math.sin(n * Math.PI / 2) * Gamma.gamma(1 - n) * zetaStandard(1 - n);
-
-        result = MathUtils.roundDouble(zetaResult, 5);
-
-        return result;
+        return MathUtils.roundDouble(zetaResult, 5);
     }
 
     public static double zetaDefinerRaw(double n) {
@@ -47,6 +42,7 @@ public class Zeta {
         } else {
             zetaResult = zetaExtendedRaw(n);
         }
+
         return zetaResult;
     }
 
@@ -57,18 +53,15 @@ public class Zeta {
             for (int m = 1; m <= 28391621; m++) {
                 result += 1 / Math.pow(m, n);
             }
-        } else if (n == 1) {
-            result = Double.POSITIVE_INFINITY;
+            return  result;
         }
-        return result;
+
+        return Double.POSITIVE_INFINITY;
     }
 
     public static double zetaExtendedRaw(double n) {
         double result;
-
         result = Math.pow(2, n) * Math.pow(Math.PI, n - 1) * Math.sin(n * Math.PI / 2) * Gamma.gamma(1 - n) * zetaStandard(1 - n);
-
         return result;
     }
-
 }

@@ -1,6 +1,7 @@
 package dev.babai08.mathhelper.utils;
 
-public class Complex extends Object {
+public class Complex {
+
     private double x,y;
 
     public Complex(double u, double v) {
@@ -97,9 +98,6 @@ public class Complex extends Object {
         if (y==0) {
             return String.valueOf(MathUtils.roundDouble(x,5));
         }
-        if (x==0) {
-            return MathUtils.roundDouble(y,5)+"i";
-        }
-        return x+" + i*"+y;
+        return MathUtils.roundDouble(y,5)+"i";
     }
 }

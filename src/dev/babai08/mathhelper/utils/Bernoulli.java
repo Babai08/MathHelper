@@ -4,7 +4,6 @@ public class Bernoulli {
 
     public static double bernoulliNumber(int n) {
         double bernoulliN;
-        double result;
 
         if (n > 1 && n % 2 == 0) {
             bernoulliN = Math.pow(-1, (n / 2) - 1) * Zeta.zetaStandard(n) * 2 * Factorial.factorial(n) / Math.pow(2 * Math.PI, n);
@@ -17,8 +16,7 @@ public class Bernoulli {
         } else {
             bernoulliN = Double.NaN;
         }
-        result = MathUtils.roundDouble(bernoulliN, 5);
-        return result;
+        return MathUtils.roundDouble(bernoulliN, 5);
     }
 
     public static double bernoulliPolynomial(int n, double x) {
@@ -28,7 +26,6 @@ public class Bernoulli {
         for (int i = 0; i <= n; i++) {
             bernoulliP += MathUtils.nCr(n, i) * bernoulliNumber(n-i) * Math.pow(x, i);
         }
-        result = MathUtils.roundDouble(bernoulliP, 5);
-        return result;
+        return MathUtils.roundDouble(bernoulliP, 5);
     }
 }

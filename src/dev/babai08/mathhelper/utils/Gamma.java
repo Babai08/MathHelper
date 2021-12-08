@@ -3,7 +3,6 @@ package dev.babai08.mathhelper.utils;
 public class Gamma{
 
     public static double gamma(double n) {
-        double result;
         double resultRaw = 0;
         int m;
         double dx;
@@ -22,7 +21,7 @@ public class Gamma{
         for(int i=1; i < 100000*m; i++) {
             resultRaw += Math.pow(i*dx,(n-1))*Math.exp(-i*dx)*dx;
         }
-        result = MathUtils.roundDouble(resultRaw, 5);
-        return result;
+
+        return MathUtils.roundDouble(resultRaw, 5);
     }
 }

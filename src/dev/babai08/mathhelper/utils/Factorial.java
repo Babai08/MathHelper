@@ -3,16 +3,11 @@ package dev.babai08.mathhelper.utils;
 public class Factorial {
 
     public static double factorial(int n) {
-        if (n == 0)
-            return 1;
-        else
-            return (n * factorial(n-1));
+        if (n == 0) return 1;
+        else return (n * factorial(n-1));
     }
 
     public static double extFactorial(double n) {
-        double result;
-
-        result = Gamma.gamma(n+1);
-        return result;
+        return Gamma.gamma(n+1);
     }
 }
