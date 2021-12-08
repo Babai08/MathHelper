@@ -6,7 +6,7 @@ public class Bernoulli {
         double bernoulliN;
 
         if (n > 1 && n % 2 == 0) {
-            bernoulliN = Math.pow(-1, (n / 2) - 1) * Zeta.zetaStandard(n) * 2 * Factorial.factorial(n) / Math.pow(2 * Math.PI, n);
+            bernoulliN = Math.pow(-1, (n * 0.5) - 1) * Zeta.zetaStandard(n) * 2 * Factorial.factorial(n) / Math.pow(2 * Math.PI, n);
         } else if (n == 1) {
             bernoulliN = -0.5;
         } else if (n == 0) {

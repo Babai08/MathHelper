@@ -7,7 +7,7 @@ public class DefiniteIntegral {
         double dx = (a + b) / iterations;
 
         for (double i = a; i <= iterations; i++) {
-            resultRaw += Math.sqrt(1-Math.pow(i * dx, 2)) * dx;
+            resultRaw += Math.sqrt(1 - Math.pow(i * dx, 2)) * dx;
         }
         return MathUtils.roundDouble(resultRaw, 5);
     }

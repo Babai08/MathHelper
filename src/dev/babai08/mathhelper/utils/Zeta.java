@@ -29,9 +29,13 @@ public class Zeta {
     }
 
     public static double zetaExtended(double n) {
-        double zetaResult;
-        zetaResult = Math.pow(2, n) * Math.pow(Math.PI, n - 1) * Math.sin(n * Math.PI / 2) * Gamma.gamma(1 - n) * zetaStandard(1 - n);
-        return MathUtils.roundDouble(zetaResult, 5);
+        double result;
+        if (n<=-0.4) {
+            result = Math.pow(2, n) * Math.pow(Math.PI, n - 1) * Math.sin(n * Math.PI / 2) * Gamma.gamma(1 - n) * zetaStandard(1 - n);
+        } else {
+            result = 1/(n-1)+MathUtils.gamma+MathUtils.StieltjesGamma1 *(1-n)+MathUtils.StieltjesGamma2*Math.pow(1-n,2)/2;
+        }
+        return MathUtils.roundDouble(result, 5);
     }
 
     public static double zetaDefinerRaw(double n) {
@@ -61,7 +65,11 @@ public class Zeta {
 
     public static double zetaExtendedRaw(double n) {
         double result;
-        result = Math.pow(2, n) * Math.pow(Math.PI, n - 1) * Math.sin(n * Math.PI / 2) * Gamma.gamma(1 - n) * zetaStandard(1 - n);
+        if (n<=-0.4) {
+            result = Math.pow(2, n) * Math.pow(Math.PI, n - 1) * Math.sin(n * Math.PI / 2) * Gamma.gamma(1 - n) * zetaStandard(1 - n);
+        } else {
+            result = 1/(n-1)+MathUtils.gamma+MathUtils.StieltjesGamma1 *(1-n)+MathUtils.StieltjesGamma2*Math.pow(1-n,2)/2;
+        }
         return result;
     }
 }
