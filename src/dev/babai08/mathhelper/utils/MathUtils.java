@@ -72,6 +72,6 @@ public class MathUtils {
     }
 
     public static double nCr(int n, int r) {
-        return Factorial.factorial(n)/(Factorial.factorial(n - r) * Factorial.factorial(r));
+        return Factorial.factorial(n) / (Factorial.factorial(n - r) * Factorial.factorial(r));
     }
 }

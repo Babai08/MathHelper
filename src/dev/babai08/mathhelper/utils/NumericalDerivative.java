@@ -5,6 +5,6 @@ public class NumericalDerivative {
 
     public static double Derivative(String func,double sign,double x) {
         double realSign = Math.abs(sign)/sign;
-        return MathUtils.roundDouble((FunctionDefiner.function(func,realSign,x+h)-FunctionDefiner.function(func,realSign,x))/h,5);
+        return MathUtils.roundDouble((FunctionDefiner.MathDot(func,realSign,x+h)-FunctionDefiner.MathDot(func,realSign,x))/h,5);
     }
 }

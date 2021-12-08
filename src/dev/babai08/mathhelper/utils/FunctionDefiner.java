@@ -1,28 +1,16 @@
 package dev.babai08.mathhelper.utils;
 
-import java.util.Objects;
-
 public class FunctionDefiner {
 
-    public static double function(String func,double sign, double x) {
-        double realSign = Math.abs(sign)/sign;
-        double result = Double.NaN;
-        if (Objects.equals(func, "sin")) {
-            result = realSign*Math.sin(x);
-        }
-        if (Objects.equals(func, "cos")) {
-            result = realSign*Math.cos(x);
-        }
-        if (Objects.equals(func, "e") || Objects.equals(func, "exp")) {
-            result = realSign*Math.exp(x);
-        }
-        if (Objects.equals(func, "zeta")) {
-            result = realSign*Zeta.zetaDefinerRaw(x);
-        }
-        if (Objects.equals(func, "gamma")) {
-            result = realSign*Gamma.gamma(x);
-        }
-
-        return result;
+    public static double MathDot(String type, double sign, double x) {
+        double realSign = Math.abs(sign) / sign;
+        return switch (type) {
+            case "sin" -> realSign * Math.sin(x);
+            case "cos" -> realSign * Math.cos(x);
+            case "e" -> realSign * Math.exp(x);
+            case "zeta" -> realSign * Zeta.zetaDefinerRaw(x);
+            case "gamma" -> realSign * Gamma.gamma(x);
+            default -> Double.NaN;
+        };
     }
 }

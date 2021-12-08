@@ -30,5 +30,13 @@ public class Main {
         System.out.println("d/dx of -sin(1) = " + NumericalDerivative.Derivative("sin",-1,1));
         System.out.println("arg(1+i) = " + new Complex(1,1).arg());
         //System.out.println("Stieltjes_1 = " + StieltjesConstant.StieltjesGamma(1));
+
+        /*
+        Some test code to see if the func was working
+
+        double realSign = Math.abs(5) / 5;
+        System.out.println("A " + realSign * Math.sin(5));
+        System.out.println("B " + MathUtils.MathDot("sin", 5, 5));
+        */
     }
 }
