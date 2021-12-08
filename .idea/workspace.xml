@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Added Gamma function, finally fixed zeta and extended the factorial using the newly added Gamma function.">
-      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/HarmonicSeries.java" afterDir="false" />
+    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Added HarmonicSeries.">
+      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/NumericalDerivative.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Zeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Zeta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,9 @@
       <workItem from="1638146428438" duration="10000" />
       <workItem from="1638834656504" duration="3946000" />
       <workItem from="1638849189103" duration="4170000" />
-      <workItem from="1638855051050" duration="5000000" />
+      <workItem from="1638855051050" duration="5021000" />
+      <workItem from="1638907345323" duration="161000" />
+      <workItem from="1638932033499" duration="5065000" />
     </task>
     <task id="LOCAL-00001" summary="MathHelper">
       <created>1635591124278</created>
@@ -161,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638858644632</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added HarmonicSeries.">
+      <created>1638865927668</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638865927668</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +199,7 @@
     <MESSAGE value="Stieltjes Constants fixed but isn't accurate after only a few numbers." />
     <MESSAGE value="Reworked Zeta, though it still isn't working. Added Complex numbers and basic functions within them." />
     <MESSAGE value="Added Gamma function, finally fixed zeta and extended the factorial using the newly added Gamma function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Gamma function, finally fixed zeta and extended the factorial using the newly added Gamma function." />
+    <MESSAGE value="Added HarmonicSeries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added HarmonicSeries." />
   </component>
 </project>

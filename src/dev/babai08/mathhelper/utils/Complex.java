@@ -89,16 +89,16 @@ public class Complex extends Object {
 
     public String toString() {
         if (x!=0 && y>0) {
-            return x+" + "+y+"i";
+            return MathUtils.roundDouble(x,5)+" + "+MathUtils.roundDouble(y,5)+"i";
         }
         if (x!=0 && y<0) {
-            return x+" - "+(-y)+"i";
+            return MathUtils.roundDouble(x,5)+" - "+(-MathUtils.roundDouble(y,5))+"i";
         }
         if (y==0) {
-            return String.valueOf(x);
+            return String.valueOf(MathUtils.roundDouble(x,5));
         }
         if (x==0) {
-            return y+"i";
+            return MathUtils.roundDouble(y,5)+"i";
         }
         return x+" + i*"+y;
     }

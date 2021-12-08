@@ -39,4 +39,36 @@ public class Zeta {
         return result;
     }
 
+    public static double zetaDefinerRaw(double n) {
+        double zetaResult;
+
+        if (n >= 1) {
+            zetaResult = zetaStandardRaw(n);
+        } else {
+            zetaResult = zetaExtendedRaw(n);
+        }
+        return zetaResult;
+    }
+
+    public static double zetaStandardRaw(double n) {
+        double result = 0;
+
+        if (n > 1) {
+            for (int m = 1; m <= 28391621; m++) {
+                result += 1 / Math.pow(m, n);
+            }
+        } else if (n == 1) {
+            result = Double.POSITIVE_INFINITY;
+        }
+        return result;
+    }
+
+    public static double zetaExtendedRaw(double n) {
+        double result;
+
+        result = Math.pow(2, n) * Math.pow(Math.PI, n - 1) * Math.sin(n * Math.PI / 2) * Gamma.gamma(1 - n) * zetaStandard(1 - n);
+
+        return result;
+    }
+
 }
