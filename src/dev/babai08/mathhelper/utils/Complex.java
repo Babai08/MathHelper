@@ -88,6 +88,13 @@ public class Complex {
         return new Complex(-x,-y);
     }
 
+    public Complex power(Complex w) {
+        double theta = Math.atan2(y,x);
+        double mod = Math.sqrt(x*x+y*y);
+
+        return new Complex(Math.pow(mod,w.Re())*Math.exp(-w.Im()*theta)*Math.cos(Math.log(mod)*w.Im()+w.Re()*theta),Math.pow(mod,w.Re())*Math.exp(-w.Im()*theta)*Math.sin(Math.log(mod)*w.Im()+w.Re()*theta));
+    }
+
     public String toString() {
         if (x!=0 && y>0) {
             return MathUtils.roundDouble(x,5)+" + "+MathUtils.roundDouble(y,5)+"i";
@@ -97,7 +104,8 @@ public class Complex {
         }
         if (y==0) {
             return String.valueOf(MathUtils.roundDouble(x,5));
+        } else {
+            return MathUtils.roundDouble(y,5)+"i";
         }
-        return MathUtils.roundDouble(y,5)+"i";
     }
 }

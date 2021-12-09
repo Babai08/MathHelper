@@ -10,7 +10,7 @@ public class Main {
         float result = 0;
 
         for (count = 0; count <= 100; count++) {
-            result += Math.pow(-1, count) * Math.pow(MathUtils.gamma, 2 * count + 1) / Factorial.factorial(2 * count + 1);
+            result += Math.pow(-1, count) * Math.pow(Math.PI, 2 * count + 1) / Factorial.factorial(2 * count + 1);
             System.out.println("[" + lineCount + "] MATH : OUT : " + result);
             lineCount++;
         }
@@ -27,8 +27,9 @@ public class Main {
         System.out.println("-0.5! = " + Factorial.extFactorial(-0.5));
         System.out.println("H_100 = " + HarmonicSeries.harmonicSeries(100));
         System.out.println("H_1000000-ln(1000000) = " + (HarmonicSeries.harmonicSeries(1000000) - Math.log(1000000)));
-        System.out.println("d/dx of -sin(1) = " + NumericalDerivative.Derivative("sin",-1,1));
+        System.out.println("d/dx of -sin(0) = " + NumericalDerivative.Derivative("sin",-1,0));
         System.out.println("arg(1+i) = " + new Complex(1,1).arg());
+        System.out.println("Im((1+i)^(2)) = " + new Complex(1,1).power(new Complex(2,0)).Im());
         //System.out.println("Stieltjes_1 = " + StieltjesConstant.StieltjesGamma(1));
 
         /*

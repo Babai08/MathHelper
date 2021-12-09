@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="NumericalDerivative added">
+      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/FunctionDefiner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/FunctionDefiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/FunctionDefiner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/MathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/MathUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/FunctionDefiner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Gamma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Gamma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/NumericalDerivative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/NumericalDerivative.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +66,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="dev.babai08.mathhelper" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="dev.babai08.mathhelper.Main" />
@@ -111,6 +118,11 @@
       <workItem from="1638947622194" duration="16000" />
       <workItem from="1638947646879" duration="828000" />
       <workItem from="1638956955693" duration="3488000" />
+      <workItem from="1638961610211" duration="804000" />
+      <workItem from="1638994807686" duration="431000" />
+      <workItem from="1639002416961" duration="790000" />
+      <workItem from="1639027104960" duration="716000" />
+      <workItem from="1639028881929" duration="3822000" />
     </task>
     <task id="LOCAL-00001" summary="MathHelper">
       <created>1635591124278</created>
