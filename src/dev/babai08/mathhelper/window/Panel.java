@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 public class Panel extends JPanel implements ActionListener {
 
-    private Font DefaultFont;
+    private final Font DefaultFont;
 
     public Panel() {
         this.DefaultFont = new Font("Times New Roman", Font.PLAIN, 30);
