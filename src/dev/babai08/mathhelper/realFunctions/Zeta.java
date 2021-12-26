@@ -1,4 +1,6 @@
-package dev.babai08.mathhelper.utils;
+package dev.babai08.mathhelper.realFunctions;
+
+import dev.babai08.mathhelper.utils.MathUtils;
 
 public class Zeta {
 

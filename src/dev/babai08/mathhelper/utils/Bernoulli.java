@@ -1,5 +1,7 @@
 package dev.babai08.mathhelper.utils;
 
+import dev.babai08.mathhelper.realFunctions.Zeta;
+
 public class Bernoulli {
 
     public static double bernoulliNumber(int n) {

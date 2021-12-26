@@ -1,5 +1,7 @@
 package dev.babai08.mathhelper.utils;
 
+import dev.babai08.mathhelper.realFunctions.Gamma;
+
 public class Factorial {
 
     public static double factorial(int n) {

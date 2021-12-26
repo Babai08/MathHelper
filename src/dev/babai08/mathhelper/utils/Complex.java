@@ -2,7 +2,7 @@ package dev.babai08.mathhelper.utils;
 
 public class Complex {
 
-    private double x,y;
+    private final double x,y;
 
     public Complex(double u, double v) {
         x=u;
@@ -93,6 +93,23 @@ public class Complex {
         double mod = Math.sqrt(x*x+y*y);
 
         return new Complex(Math.pow(mod,w.Re())*Math.exp(-w.Im()*theta)*Math.cos(Math.log(mod)*w.Im()+w.Re()*theta),Math.pow(mod,w.Re())*Math.exp(-w.Im()*theta)*Math.sin(Math.log(mod)*w.Im()+w.Re()*theta));
+    }
+
+    public Complex Ei() {
+        double theta = Math.atan2(y,x);
+        double mod = Math.sqrt(x*x+y*y);
+        double RePart = MathUtils.gamma + Math.log(mod);
+        double ImPart = theta;
+
+        if (mod < 34) {
+            for (int n = 1; n <= 10000; n++) {
+                RePart += Math.pow(mod, n) * Math.cos(n * theta) / (n * Factorial.factorial(n));
+                ImPart += Math.pow(mod, n) * Math.sin(n * theta) / (n * Factorial.factorial(n));
+            }
+            return new Complex(RePart, ImPart);
+        } else {
+            return new Complex(Double.NaN, Double.NaN);
+        }
     }
 
     public String toString() {

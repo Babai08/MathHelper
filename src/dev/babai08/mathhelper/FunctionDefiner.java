@@ -1,22 +1,41 @@
 package dev.babai08.mathhelper;
 
-import dev.babai08.mathhelper.utils.Gamma;
-import dev.babai08.mathhelper.utils.Zeta;
+import dev.babai08.mathhelper.realFunctions.*;
+import dev.babai08.mathhelper.complexFunctions.*;
+import dev.babai08.mathhelper.utils.Complex;
 
 public class FunctionDefiner {
 
-    public static double RealFunction(String type, double coefficient, double x) {
+    public static double RealFunction(String type, double coefficient, double x, double exponent) {
         return switch (type) {
-            case "sin" -> coefficient * Math.sin(x);
-            case "cos" -> coefficient * Math.cos(x);
-            case "e" -> coefficient * Math.exp(x);
-            case "zeta" -> coefficient * Zeta.zetaDefinerRaw(x);
+            case "sin" -> coefficient * Math.pow(Math.sin(x), exponent);
+            case "cos" -> coefficient * Math.pow(Math.cos(x), exponent);
+            case "e" -> coefficient * Math.pow(Math.exp(x),exponent);
+            case "zeta" -> coefficient * Math.pow(Zeta.zetaDefinerRaw(x), exponent);
             case "gamma" -> coefficient * Gamma.gammaRaw(x);
-            case "tan" -> coefficient + Math.tan(x);
-            case "sec" -> coefficient / Math.cos(x);
-            case "csc" -> coefficient / Math.sin(x);
-            case "cot" -> coefficient / Math.tan(x);
+            case "tan" -> coefficient * Math.pow(Math.tan(x), exponent);
+            case "sec" -> coefficient / Math.pow(Math.cos(x), exponent);
+            case "csc" -> coefficient / Math.pow(Math.sin(x), exponent);
+            case "cot" -> coefficient / Math.pow(Math.tan(x), exponent);
+            case "Ei" -> coefficient * Math.pow(ExponentialIntegral.Ei(x), exponent);
+            case "^" -> coefficient * Math.pow(x, exponent);
+            case "ln" -> coefficient * Math.pow(Math.log(x), exponent);
+            case "Li" -> coefficient * Math.pow(LogarithmicIntegral.Li(x), exponent);
             default -> Double.NaN;
+        };
+    }
+
+    public static Complex complexFunction(String type, double ReCoefficient, double ImCoefficient, double x, double y, double ReExponent, double ImExponent) {
+        return switch (type) {
+            case "sin" -> (cTrigonometricFunctions.sin(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "cos" -> (cTrigonometricFunctions.cos(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "tan" -> (cTrigonometricFunctions.tan(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "sec" -> (cTrigonometricFunctions.sec(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "csc" -> (cTrigonometricFunctions.csc(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "cot" -> (cTrigonometricFunctions.cot(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "Ei" -> (cExponentialIntegral.Ei(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "^" -> (new Complex(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            default -> new Complex(Double.NaN, Double.NaN);
         };
     }
 }
