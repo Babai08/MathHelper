@@ -35,6 +35,13 @@ public class FunctionDefiner {
             case "cot" -> (cTrigonometricFunctions.cot(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
             case "Ei" -> (cExponentialIntegral.Ei(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
             case "^" -> (new Complex(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "sinh" -> (cHyperbolicTrigonometricFunctions.sinh(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "cosh" -> (cHyperbolicTrigonometricFunctions.cosh(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "tanh" -> (cHyperbolicTrigonometricFunctions.tanh(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "sech" -> (cHyperbolicTrigonometricFunctions.sech(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "csch" -> (cHyperbolicTrigonometricFunctions.csch(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "coth" -> (cHyperbolicTrigonometricFunctions.coth(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "e" -> (cExponential.exp(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
             default -> new Complex(Double.NaN, Double.NaN);
         };
     }

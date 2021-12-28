@@ -4,22 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Moved FunctionDefiner and changed sign to coefficient, added powers to Complex.">
-      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cExponentialIntegral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cTrigonometricFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/LogarithmicIntegral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/window/Frame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/window/Panel.java" afterDir="false" />
+    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Moved functions out of utils and put them into their own package. Added a frame that will be used later, currently not rendering anything. Added complex definitions to the Ei(z) function. Added a alternative version of the derivative. Extended the Function Definer">
+      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cExponential.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cHyperbolicTrigonometricFunctions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/BigComplex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/FunctionDefiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/FunctionDefiner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Gamma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Gamma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Bernoulli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Bernoulli.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/ExponentialIntegral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/ExponentialIntegral.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Factorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Gamma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Gamma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/NumericalDerivative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/NumericalDerivative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Zeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Zeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/MathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/MathUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +137,8 @@
       <workItem from="1640498511767" duration="10784000" />
       <workItem from="1640515817216" duration="304000" />
       <workItem from="1640516127197" duration="88000" />
-      <workItem from="1640516220731" duration="2405000" />
+      <workItem from="1640516220731" duration="12401000" />
+      <workItem from="1640650438348" duration="16058000" />
     </task>
     <task id="LOCAL-00001" summary="MathHelper">
       <created>1635591124278</created>
@@ -220,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639034103255</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Moved functions out of utils and put them into their own package. Added a frame that will be used later, currently not rendering anything. Added complex definitions to the Ei(z) function. Added a alternative version of the derivative. Extended the Function Definer">
+      <created>1640522460060</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640522460060</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Moved functions out of utils and put them into their own package. Added a frame that will be used later, currently not rendering anything. Added complex definitions to the Ei(z) function. Added a alternative version of the derivative. Extended the Function Definer">
+      <created>1640522511869</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1640522511869</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +261,7 @@
     <MESSAGE value="Added HarmonicSeries." />
     <MESSAGE value="NumericalDerivative added" />
     <MESSAGE value="Moved FunctionDefiner and changed sign to coefficient, added powers to Complex." />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved FunctionDefiner and changed sign to coefficient, added powers to Complex." />
+    <MESSAGE value="Moved functions out of utils and put them into their own package. Added a frame that will be used later, currently not rendering anything. Added complex definitions to the Ei(z) function. Added a alternative version of the derivative. Extended the Function Definer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved functions out of utils and put them into their own package. Added a frame that will be used later, currently not rendering anything. Added complex definitions to the Ei(z) function. Added a alternative version of the derivative. Extended the Function Definer" />
   </component>
 </project>
