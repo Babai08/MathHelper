@@ -1,37 +1,25 @@
 package dev.babai08.mathhelper.utils;
 
-import dev.babai08.mathhelper.realFunctions.Zeta;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class Bernoulli {
 
-    public static double bernoulliNumber(int n) {
-        double bernoulliN;
-
-        if (n > 1 && n % 2 == 0) {
-            bernoulliN = Math.pow(-1, (n * 0.5) - 1) * Zeta.zetaStandard(n) * 2 * Factorial.factorial(n) / Math.pow(2 * Math.PI, n);
-        } else if (n == 1) {
-            bernoulliN = -0.5;
-        } else if (n == 0) {
-            bernoulliN = 1;
-        } else if (n > 1){
-            bernoulliN = 0;
-        } else {
-            bernoulliN = Double.NaN;
-        }
-        return MathUtils.roundDouble(bernoulliN, 5);
-    }
-
-    public static double bernoulliNumber2(int n) {
+    public static double BernoulliNumber(int n) {
         BigDecimal bernoulliN = new BigDecimal(0);
         for (long k = 0; k <= n; k++) {
-            bernoulliN = bernoulliN.add(sum2(k,n));
+            bernoulliN = bernoulliN.add(InternalBernoulliSum(k,n));
         }
         return bernoulliN.doubleValue();
     }
-    public static BigDecimal sum2(long k, int n) {
+    public static BigDecimal bdBernoulliNumber(int n) {
+        BigDecimal bernoulliN = new BigDecimal(0);
+        for (long k = 0; k <= n; k++) {
+            bernoulliN = bernoulliN.add(InternalBernoulliSum(k,n));
+        }
+        return bernoulliN;
+    }
+    private static BigDecimal InternalBernoulliSum(long k, int n) {
         BigDecimal result = BigDecimal.ZERO;
 
         for (long v = 0; v <= k; v++) {
@@ -40,12 +28,13 @@ public class Bernoulli {
         return result;
     }
 
-    public static double bernoulliPolynomial(int n, double x) {
-        double bernoulliP = 0;
+    public static double bernoulliPolynomial(int n, BigDecimal x) {
+        BigDecimal bernoulliP = BigDecimal.ZERO;
 
         for (int i = 0; i <= n; i++) {
-            bernoulliP += MathUtils.nCr((long) n, i).doubleValue() * bernoulliNumber2(n-i) * Math.pow(x, i);
+            bernoulliP = bernoulliP.add(MathUtils.nCr((long) n, i).multiply(bdBernoulliNumber(n-i)).multiply(BigDecimal.valueOf(Math.pow(x.longValue(),i))));
         }
-        return MathUtils.roundDouble(bernoulliP, 5);
+
+        return bernoulliP.doubleValue();
     }
 }

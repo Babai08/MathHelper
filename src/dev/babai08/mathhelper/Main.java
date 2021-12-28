@@ -21,7 +21,7 @@ public class Main {
 
         System.out.println("MATH : END : " + result);
         System.out.println("Area under circle between 0 and 1 is " + DefiniteIntegral.functionArea(0, 1, 1250000));
-        System.out.println("Bernoulli 4 is " + Bernoulli.bernoulliNumber2(4));
+        System.out.println("Bernoulli 4 is " + Bernoulli.BernoulliNumber(4));
         System.out.println("H_100 = " + HarmonicSeries.harmonicSeries(100));
         System.out.println("d/dx of Gamma(1) = " + NumericalDerivative.derivative("gamma",1,1, 1, 0.01));
         System.out.println("Ei(-1) = " + FunctionDefiner.complexFunction("Ei", 1, 0, -1, 0, 1, 0));
@@ -31,6 +31,7 @@ public class Main {
         System.out.println("(1+i)^(1+i) = "+ new Complex(1,1).power(new Complex(1,1)));
         System.out.println("24! = " + Factorial.factorial(24));
         System.out.println("Gamma(-1.5) = " + Gamma.gamma1(-1.5));
+        System.out.println("BernoulliB_2(100) = " + Bernoulli.bernoulliPolynomial(2, BigDecimal.valueOf(100)));
 
         /*
         Test code for the window.
