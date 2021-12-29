@@ -4,6 +4,7 @@ import dev.babai08.mathhelper.utils.*;
 
 public class cExponentialIntegral {
 
+    //Uses Babai08's derived formula for Re and Im parts
     public static Complex Ei(double x, double y) {
         double theta = Math.atan2(y,x);
         double mod = Math.sqrt(x*x+y*y);

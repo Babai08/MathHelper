@@ -5,6 +5,7 @@ import dev.babai08.mathhelper.utils.MathUtils;
 
 public class ExponentialIntegral {
 
+    //Uses the Puiseux series expansion
     public static double Ei(double x) {
         double EiResult = 0;
 

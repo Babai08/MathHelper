@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Made a BigComplex class to extend the accuracy. Implemented tgdavies fix for the Bernoulli Numbers. Moved the hyperbolic trig functions and exponential to their own classes.">
+    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Worked on Bernoulli polynomials.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/FunctionDefiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/FunctionDefiner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Bernoulli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Bernoulli.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/StieltjesConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/StieltjesConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cExponential.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cExponential.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cExponentialIntegral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cExponentialIntegral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cHyperbolicTrigonometricFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cHyperbolicTrigonometricFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cTrigonometricFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cTrigonometricFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/ExponentialIntegral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/ExponentialIntegral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Gamma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Gamma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Zeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Zeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/MathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/MathUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +139,8 @@
       <workItem from="1640516127197" duration="88000" />
       <workItem from="1640516220731" duration="12401000" />
       <workItem from="1640650438348" duration="16411000" />
-      <workItem from="1640673783743" duration="1766000" />
+      <workItem from="1640673783743" duration="1805000" />
+      <workItem from="1640758185827" duration="9267000" />
     </task>
     <task id="LOCAL-00001" summary="MathHelper">
       <created>1635591124278</created>
@@ -232,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640670718849</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Worked on Bernoulli polynomials.">
+      <created>1640675594360</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1640675594360</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +279,7 @@
     <MESSAGE value="Moved FunctionDefiner and changed sign to coefficient, added powers to Complex." />
     <MESSAGE value="Moved functions out of utils and put them into their own package. Added a frame that will be used later, currently not rendering anything. Added complex definitions to the Ei(z) function. Added a alternative version of the derivative. Extended the Function Definer" />
     <MESSAGE value="Made a BigComplex class to extend the accuracy. Implemented tgdavies fix for the Bernoulli Numbers. Moved the hyperbolic trig functions and exponential to their own classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made a BigComplex class to extend the accuracy. Implemented tgdavies fix for the Bernoulli Numbers. Moved the hyperbolic trig functions and exponential to their own classes." />
+    <MESSAGE value="Worked on Bernoulli polynomials." />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on Bernoulli polynomials." />
   </component>
 </project>

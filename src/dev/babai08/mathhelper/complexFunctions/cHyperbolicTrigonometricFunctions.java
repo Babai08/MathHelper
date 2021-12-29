@@ -4,6 +4,7 @@ import dev.babai08.mathhelper.utils.Complex;
 
 public class cHyperbolicTrigonometricFunctions {
 
+    //Uses the fact that isinh(ix)=sin(x) and cosh(ix)=cos(x) and multiple input formula's derived from definition
     public static Complex sinh(double x, double y) {
         return new Complex(Math.sinh(x)*Math.cos(y),Math.cosh(x)*Math.sin(y));
     }

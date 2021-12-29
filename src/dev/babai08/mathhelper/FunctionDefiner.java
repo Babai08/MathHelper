@@ -3,6 +3,7 @@ package dev.babai08.mathhelper;
 import dev.babai08.mathhelper.realFunctions.*;
 import dev.babai08.mathhelper.complexFunctions.*;
 import dev.babai08.mathhelper.utils.Complex;
+import dev.babai08.mathhelper.utils.Factorial;
 
 public class FunctionDefiner {
 
@@ -12,7 +13,6 @@ public class FunctionDefiner {
             case "cos" -> coefficient * Math.pow(Math.cos(x), exponent);
             case "e" -> coefficient * Math.pow(Math.exp(x),exponent);
             case "zeta" -> coefficient * Math.pow(Zeta.zetaDefinerRaw(x), exponent);
-            case "gamma" -> coefficient * Gamma.gammaRaw(x);
             case "tan" -> coefficient * Math.pow(Math.tan(x), exponent);
             case "sec" -> coefficient / Math.pow(Math.cos(x), exponent);
             case "csc" -> coefficient / Math.pow(Math.sin(x), exponent);
@@ -21,6 +21,8 @@ public class FunctionDefiner {
             case "^" -> coefficient * Math.pow(x, exponent);
             case "ln" -> coefficient * Math.pow(Math.log(x), exponent);
             case "Li" -> coefficient * Math.pow(LogarithmicIntegral.Li(x), exponent);
+            case "gamma" -> coefficient * Math.pow(Gamma.gamma(x),exponent);
+            case "!" -> coefficient * Math.pow(Factorial.extFactorial(x),exponent);
             default -> Double.NaN;
         };
     }

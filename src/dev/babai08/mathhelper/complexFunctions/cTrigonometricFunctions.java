@@ -4,6 +4,7 @@ import dev.babai08.mathhelper.utils.Complex;
 
 public class cTrigonometricFunctions {
 
+    //Uses the fact that isinh(ix)=sin(x) and cosh(ix)=cos(x) and multiple input formula's derived from complex definition
     public static Complex sin(double x, double y) {
         return (new Complex(Math.sin(x)*Math.cosh(y), Math.cos(x)*Math.sinh(y)));
     }
