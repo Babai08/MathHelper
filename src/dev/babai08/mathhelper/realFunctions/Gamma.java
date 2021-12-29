@@ -2,11 +2,9 @@ package dev.babai08.mathhelper.realFunctions;
 
 import dev.babai08.mathhelper.utils.MathUtils;
 
-import java.math.BigDecimal;
-
 public class Gamma{
 
-    //Uses the natural log series expansion of the Weierstrass definition, more accurate for -ve numbers
+    // Uses the natural log series expansion of the Weierstrass definition, more accurate for -ve numbers
     public static double gamma(double x) {
         double sum = 0;
         double result;
@@ -20,8 +18,7 @@ public class Gamma{
         if(x >= 0) {
             return result;
         } else {
-            double sgn = (Math.sin(Math.PI*x)/Math.abs(Math.sin(Math.PI*x)));
-            return result*sgn;
+            return result*(Math.sin(Math.PI*x)/Math.abs(Math.sin(Math.PI*x)));
         }
     }
 }

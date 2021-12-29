@@ -4,10 +4,10 @@ import dev.babai08.mathhelper.utils.*;
 
 public class cExponentialIntegral {
 
-    //Uses Babai08's derived formula for Re and Im parts
+    // Uses Babai08's derived formula for Re and Im parts
     public static Complex Ei(double x, double y) {
-        double theta = Math.atan2(y,x);
-        double mod = Math.sqrt(x*x+y*y);
+        double theta = Math.atan2(y, x);
+        double mod = Math.sqrt(x * x + y * y);
         double RePart = MathUtils.gamma + Math.log(mod);
         double ImPart = theta;
 
@@ -17,8 +17,8 @@ public class cExponentialIntegral {
                 ImPart += Math.pow(mod, n) * Math.sin(n * theta) / (n * Factorial.factorial(n));
             }
             return new Complex(RePart, ImPart);
-        } else {
-            return new Complex(Double.NaN, Double.NaN);
         }
+
+        return new Complex(Double.NaN, Double.NaN);
     }
 }

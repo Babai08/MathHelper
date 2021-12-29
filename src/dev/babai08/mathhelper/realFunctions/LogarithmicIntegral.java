@@ -5,8 +5,8 @@ public class LogarithmicIntegral {
     public static double Li(double x) {
         if (x >= 0) {
             return ExponentialIntegral.Ei(Math.log(x));
-        } else {
-            return Double.NaN;
         }
+
+        return Double.NaN;
     }
 }
