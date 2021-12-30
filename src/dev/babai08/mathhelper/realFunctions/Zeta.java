@@ -1,17 +1,9 @@
 package dev.babai08.mathhelper.realFunctions;
 
+import dev.babai08.mathhelper.utils.Factorial;
 import dev.babai08.mathhelper.utils.MathUtils;
 
 public class Zeta {
-
-    public static double zetaDefinerRaw(double n) {
-
-        if (n >= 1) {
-            return zetaDefinitionRaw(n);
-        }
-
-        return zetaExtendedRaw(n);
-    }
 
     public static double zetaDefinitionRaw(double n) {
         double result = 0;
@@ -26,15 +18,6 @@ public class Zeta {
         return Double.POSITIVE_INFINITY;
     }
 
-    // Uses the analytic continuation
-    public static double zetaExtendedRaw(double n) {
-        if (n <= -0.4) {
-            return Math.pow(2, n) * Math.pow(Math.PI, n - 1) * Math.sin(n * Math.PI / 2) * Gamma.gamma(1 - n) * zeta(1 - n);
-        }
-
-        return 1 / (n - 1) + MathUtils.gamma + MathUtils.StieltjesGamma1 * (1 - n) + MathUtils.StieltjesGamma2 * Math.pow(1 - n, 2) / 2;
-    }
-
     // Uses a sum from Wolfram Alpha
     public static double zetaAlternateRaw(double s) {
         double sum = 0;
@@ -47,11 +30,11 @@ public class Zeta {
         return Double.NaN;
     }
 
-    // Uses the Dirichlet series for the zeta function
+    // Uses the Dirichlet series for the zeta function in the loop for s > 1, Uses the analytic continuation for s < 0, uses the Laurent series for 0 < s < 1
     public static double zeta(double s) {
         double result = 0;
 
-        if (s > 1) {
+        if (s > 15) {
             for (int n = 1; n <= 14566; n++) {
                 result += (n * (n + 1) * (((2 * n + 3 + s) / (Math.pow(n + 1, s + 2))) - ((2 * n - 1 - s) / Math.pow(n, s + 2)))) / 2;
             }
@@ -60,10 +43,13 @@ public class Zeta {
             return Double.NaN;
         } else if (s == 0) {
             return -0.5;
-        } else if (s < 0) {
+        } else if (s < -17) {
             return Math.pow(2, s) * Math.pow(Math.PI, s - 1) * Math.sin(Math.PI * s / 2) * Gamma.gamma(1 - s) * zeta(1 - s);
         } else {
-            return 1 / (s - 1) + MathUtils.gamma + MathUtils.StieltjesGamma1 * (1 - s) + MathUtils.StieltjesGamma2 * Math.pow(1 - s, 2) / 2;
+            for (int n = 0; n<= 78; n++) {
+                result += MathUtils.StieltjesGamma[n]*Math.pow((1-s),n)/ Factorial.factorial(n);
+            }
+            return 1/(s-1)+result;
         }
     }
 }

@@ -97,15 +97,15 @@ public class Complex {
 
     public String toString() {
         if (x != 0 && y > 0) {
-            return MathUtils.roundDouble(x, 5) + " + " + MathUtils.roundDouble(y, 5) + "i";
+            return x + " + " + y + "i";
         }
         if (x != 0 && y < 0) {
-            return MathUtils.roundDouble(x, 5) + " - " + (-MathUtils.roundDouble(y, 5)) + "i";
+            return x + " - " + (-y) + "i";
         }
         if (y == 0) {
-            return String.valueOf(MathUtils.roundDouble(x, 5));
+            return String.valueOf(x);
         } else {
-            return MathUtils.roundDouble(y, 5) + "i";
+            return y + "i";
         }
     }
 }

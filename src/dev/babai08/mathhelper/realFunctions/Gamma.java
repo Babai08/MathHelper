@@ -4,21 +4,34 @@ import dev.babai08.mathhelper.utils.MathUtils;
 
 public class Gamma{
 
-    // Uses the natural log series expansion of the Weierstrass definition, more accurate for -ve numbers
+    // Directs the value to the more accurate definition for its sign.
     public static double gamma(double x) {
-        double sum = 0;
-        double result;
 
-        for (int n = 1; n <= 1000000; n++) {
-            sum += Math.log(Math.abs(1+(x/n)))-(x/n);
+        if (x>0) {
+            return EulerGamma(x);
+        } else if (x < 0) {
+            return WeierstrassGamma(x);
         }
+        return Double.NaN;
+    }
 
-        result = Math.exp(-Math.log(Math.abs(x))-MathUtils.gamma*x-sum);
+    //Uses the Euler Product definition of the Gamma function
+    public static double EulerGamma(double x) {
+        double result = 1/x;
 
-        if(x >= 0) {
-            return result;
-        } else {
-            return result*(Math.sin(Math.PI*x)/Math.abs(Math.sin(Math.PI*x)));
+        for (int n = 1; n <= 25000000; n++) {
+            result *= Math.pow(1+Math.pow(n,-1),x)/(1+(x/n));
         }
+        return result;
+    }
+
+    //Uses the Weierstrass Product definition of the Gamma function
+    public static double WeierstrassGamma(double x) {
+        double result = Math.exp(x*(-MathUtils.StieltjesGamma[0]))/x;
+
+        for (int n=1; n <= 25000000; n++) {
+            result *= Math.exp(x/n)/(1+(x/n));
+        }
+        return result;
     }
 }
