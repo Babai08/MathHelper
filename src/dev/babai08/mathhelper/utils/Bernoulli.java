@@ -5,6 +5,7 @@ import java.math.RoundingMode;
 
 public class Bernoulli {
 
+    // Based upon tgdavies' implementation of equation 33 found at https://mathworld.wolfram.com/BernoulliNumber.html
     public static double BernoulliNumber(int n) {
         BigDecimal bernoulliN = new BigDecimal(0);
 
@@ -13,15 +14,6 @@ public class Bernoulli {
         }
 
         return bernoulliN.doubleValue();
-    }
-
-    public static BigDecimal bdBernoulliNumber(int n) {
-        BigDecimal bernoulliN = new BigDecimal(0);
-        for (long k = 0; k <= n; k++) {
-            bernoulliN = bernoulliN.add(InternalBernoulliSum(k, n));
-        }
-
-        return bernoulliN;
     }
 
     private static BigDecimal InternalBernoulliSum(long k, int n) {
@@ -34,13 +26,14 @@ public class Bernoulli {
         return result;
     }
 
-    public static double bernoulliPolynomial(int n, BigDecimal x) {
-        BigDecimal bernoulliP = BigDecimal.ZERO;
+    // Uses the
+    public static double bernoulliPolynomial(int n, double x) {
+        double bernoulliP = 0;
 
-        for (int i = 0; i <= n; i++) {
-            bernoulliP = bernoulliP.add(MathUtils.nCr((long) n, i).multiply(bdBernoulliNumber(n - i)).multiply(BigDecimal.valueOf(Math.pow(x.longValue(), i))));
+        for (int r = 0; r <= n; r++) {
+            bernoulliP += MathUtils.nCr(n,r)*BernoulliNumber(n-r)*Math.pow(x,r);
         }
 
-        return bernoulliP.doubleValue();
+        return bernoulliP;
     }
 }

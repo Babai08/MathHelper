@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Added comments and reworked Zeta function.">
+    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Added comments, reworked Zeta function and Gamma function.">
+      <change afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cGamma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/FunctionDefiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/FunctionDefiner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Gamma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Gamma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Zeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Zeta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Bernoulli.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Bernoulli.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/Complex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/MathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/MathUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/NumericalDerivative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/NumericalDerivative.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +62,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -138,7 +139,8 @@
       <workItem from="1640650438348" duration="16411000" />
       <workItem from="1640673783743" duration="1805000" />
       <workItem from="1640758185827" duration="9874000" />
-      <workItem from="1640783869871" duration="7908000" />
+      <workItem from="1640783869871" duration="13820000" />
+      <workItem from="1640913637545" duration="4644000" />
     </task>
     <task id="LOCAL-00001" summary="MathHelper">
       <created>1635591124278</created>
@@ -252,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640769635843</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added comments, reworked Zeta function and Gamma function.">
+      <created>1640825973975</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1640825973975</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +295,7 @@
     <MESSAGE value="Made a BigComplex class to extend the accuracy. Implemented tgdavies fix for the Bernoulli Numbers. Moved the hyperbolic trig functions and exponential to their own classes." />
     <MESSAGE value="Worked on Bernoulli polynomials." />
     <MESSAGE value="Added comments and reworked Zeta function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments and reworked Zeta function." />
+    <MESSAGE value="Added comments, reworked Zeta function and Gamma function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments, reworked Zeta function and Gamma function." />
   </component>
 </project>

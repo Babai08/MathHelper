@@ -5,6 +5,7 @@ import dev.babai08.mathhelper.utils.MathUtils;
 
 public class Zeta {
 
+    // Uses the definition of the zeta function
     public static double zetaDefinitionRaw(double n) {
         double result = 0;
 
@@ -16,18 +17,6 @@ public class Zeta {
         }
 
         return Double.POSITIVE_INFINITY;
-    }
-
-    // Uses a sum from Wolfram Alpha
-    public static double zetaAlternateRaw(double s) {
-        double sum = 0;
-        if (s > 1) {
-            for (int k = 0; k <= 47453132; k++) {
-                sum += 1 / Math.pow((1 + 2 * k), s);
-            }
-            return (Math.pow(2, s) * sum) / (Math.pow(2, s) - 1);
-        }
-        return Double.NaN;
     }
 
     // Uses the Dirichlet series for the zeta function in the loop for s > 1, Uses the analytic continuation for s < 0, uses the Laurent series for 0 < s < 1

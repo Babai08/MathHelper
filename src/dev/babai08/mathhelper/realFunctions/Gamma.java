@@ -2,7 +2,7 @@ package dev.babai08.mathhelper.realFunctions;
 
 import dev.babai08.mathhelper.utils.MathUtils;
 
-public class Gamma{
+public class Gamma {
 
     // Directs the value to the more accurate definition for its sign.
     public static double gamma(double x) {
