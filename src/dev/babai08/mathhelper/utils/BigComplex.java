@@ -59,6 +59,10 @@ public class BigComplex {
         return new BigComplex(RePart, ImPart);
     }
 
+    public BigComplex chs(BigComplex w) {
+        return new BigComplex(w.Re().multiply(BigDecimal.valueOf(-1)), w.Im().multiply(BigDecimal.valueOf(-1)));
+    }
+
     public String toString() {
         if (x.doubleValue() != 0 && y.doubleValue() > 0) {
             return x.doubleValue() + " + " + y.doubleValue() + "i";

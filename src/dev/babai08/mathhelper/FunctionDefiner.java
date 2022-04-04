@@ -45,6 +45,7 @@ public class FunctionDefiner {
             case "coth" -> (cHyperbolicTrigonometricFunctions.coth(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
             case "e" -> (cExponential.exp(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
             case "gamma" -> (cGamma.Gamma(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
+            case "zeta" -> (cZeta.zeta(x,y).power(new Complex(ReExponent, ImExponent))).mul(new Complex(ReCoefficient, ImCoefficient));
             default -> new Complex(Double.NaN, Double.NaN);
         };
     }

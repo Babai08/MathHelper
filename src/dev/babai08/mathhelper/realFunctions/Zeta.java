@@ -6,12 +6,12 @@ import dev.babai08.mathhelper.utils.MathUtils;
 public class Zeta {
 
     // Uses the definition of the zeta function
-    public static double zetaDefinitionRaw(double n) {
+    public static double zetaDefinitionRaw(double s) {
         double result = 0;
 
-        if (n > 1) {
+        if (s > 1) {
             for (int m = 1; m <= 30000000; m++) {
-                result += 1 / Math.pow(m, n);
+                result += 1 / Math.pow(m, s);
             }
             return result;
         }

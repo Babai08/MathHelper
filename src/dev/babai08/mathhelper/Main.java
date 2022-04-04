@@ -25,10 +25,10 @@ public class Main {
         System.out.println("Ei(-1) = " + FunctionDefiner.complexFunction("Ei", 1, 0, -1, 0, 1, 0));
         System.out.println("(1+i)tan(1+i)^(1+i) = " + FunctionDefiner.complexFunction("tan",1,1,1,1,1,1));
         //System.out.println("Stieltjes_1 = " + StieltjesConstant.StieltjesGamma(1));
-        System.out.println("Gamma(-2.1) = " + FunctionDefiner.RealFunction("gamma", 1,-2.1,1));
-        System.out.println("BernoulliB_2(100) = " + Bernoulli.bernoulliPolynomial(1, 100));
-        System.out.println("Zeta(2) = " + FunctionDefiner.RealFunction("zeta",1,2,1));
-        System.out.println("Gamma(0.1+0.1i) = " + cGamma.Gamma(0.1,0.1));
+        System.out.println("Gamma(2) = " + FunctionDefiner.RealFunction("gamma", 1,2,1));
+        System.out.println("BernoulliP_2(100) = " + Bernoulli.bernoulliPolynomial(1, 100));
+        System.out.println("Zeta(10) = " + FunctionDefiner.RealFunction("zeta",1,10,1));
+        System.out.println("Zeta(1+i) = " + FunctionDefiner.complexFunction("zeta",1,0,1,1,1,0));
         /*
         Test code for the window.
         Frame frame = new Frame();
