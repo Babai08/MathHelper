@@ -1,12 +1,19 @@
 package dev.babai08.mathhelper.complexFunctions;
 
+import dev.babai08.mathhelper.realFunctions.Zeta;
 import dev.babai08.mathhelper.utils.Complex;
+
+import java.math.BigDecimal;
 
 public class cZeta {
 
     public static Complex zeta(double x, double y) {
 
-        if (x>0) {
+        if (y==0) {
+
+            return new Complex(Zeta.zeta(x), 0);
+
+        } else if (x>0) {
             double RePart = 0;
             double ImPart = 0;
 
@@ -23,7 +30,10 @@ public class cZeta {
                 ImPart += m*(-sumScalar1*sumE1*Math.sin(sumArg1)+y*sumE1*Math.cos(sumArg1)+sumScalar2*sumE2*Math.sin(sumArg2)+y*sumE2*Math.cos(sumArg2));
             }
             return new Complex(RePart,ImPart).div(new Complex(x-1,y));
-        } else
+        } else if (x<=0) {
+            return new Complex(1,1).mul(cExponential.exp(x*Math.log(2),y*Math.log(2)).mul(cExponential.exp((x-1)*Math.log(Math.PI),y*Math.log(Math.PI))).mul(cTrigonometricFunctions.sin(Math.PI*x/2,Math.PI*y/2)).mul(cGamma.Gamma(1-x,-y)).mul(zeta(1-x,-y)));
+        }
+
         return new Complex(Double.NaN, Double.NaN);
     }
 }

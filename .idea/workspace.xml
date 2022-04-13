@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Made a complex extension of the gamma function, and cleaned up the code.">
+    <list default="true" id="63debb99-f8b7-43a7-8dd1-980b5bc0f649" name="Changes" comment="Made a complex version of the zeta function, not fully defined yet.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/FunctionDefiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/FunctionDefiner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cZeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/complexFunctions/cZeta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Zeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/realFunctions/Zeta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/BigComplex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/babai08/mathhelper/utils/BigComplex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +149,10 @@
       <workItem from="1648960592759" duration="1998000" />
       <workItem from="1649020901486" duration="1411000" />
       <workItem from="1649029220821" duration="513000" />
+      <workItem from="1649039337667" duration="189000" />
+      <workItem from="1649052835880" duration="861000" />
+      <workItem from="1649546286414" duration="2534000" />
+      <workItem from="1649662643529" duration="3248000" />
     </task>
     <task id="LOCAL-00001" summary="MathHelper">
       <created>1635591124278</created>
@@ -277,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640958318147</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Made a complex version of the zeta function, not fully defined yet.">
+      <created>1649039398039</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1649039398039</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +323,7 @@
     <MESSAGE value="Added comments and reworked Zeta function." />
     <MESSAGE value="Added comments, reworked Zeta function and Gamma function." />
     <MESSAGE value="Made a complex extension of the gamma function, and cleaned up the code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made a complex extension of the gamma function, and cleaned up the code." />
+    <MESSAGE value="Made a complex version of the zeta function, not fully defined yet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made a complex version of the zeta function, not fully defined yet." />
   </component>
 </project>

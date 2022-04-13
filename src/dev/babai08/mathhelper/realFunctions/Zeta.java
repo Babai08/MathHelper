@@ -6,7 +6,7 @@ import dev.babai08.mathhelper.utils.MathUtils;
 public class Zeta {
 
     // Uses the definition of the zeta function
-    public static double zetaDefinitionRaw(double s) {
+    public static double zetaDefinition(double s) {
         double result = 0;
 
         if (s > 1) {
@@ -19,7 +19,7 @@ public class Zeta {
         return Double.POSITIVE_INFINITY;
     }
 
-    // Uses the Dirichlet series for the zeta function in the loop for s > 1, Uses the analytic continuation for s < 0, uses the Laurent series for 0 < s < 1
+    // Uses the Dirichlet series for the zeta function in the loop for s > 15, Uses the analytic continuation for s < -17, uses the Laurent series for -17 < s < 15
     public static double zeta(double s) {
         double result = 0;
 
