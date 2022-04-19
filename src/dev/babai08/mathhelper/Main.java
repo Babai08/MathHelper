@@ -28,6 +28,7 @@ public class Main {
         System.out.println("BernoulliP_2(100) = " + Bernoulli.bernoulliPolynomial(1, 100));
         System.out.println("Zeta(-1) = " + FunctionDefiner.RealFunction("zeta",1,-1,1));
         System.out.println("Zeta(0) = " + FunctionDefiner.complexFunction("zeta",1,0,0,0,1,0));
+        System.out.println("W(2*e^2) = " + FunctionDefiner.RealFunction("W", 1, 2*Math.exp(2), 1));
         /*
         Test code for the window.
         Frame frame = new Frame();

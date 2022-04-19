@@ -23,6 +23,7 @@ public class FunctionDefiner {
             case "Li" -> coefficient * Math.pow(LogarithmicIntegral.Li(x), exponent);
             case "gamma" -> coefficient * Math.pow(Gamma.gamma(x),exponent);
             case "!" -> coefficient * Math.pow(Factorial.extFactorial(x),exponent);
+            case "W" -> coefficient * Math.pow(ProductLog.W(x),exponent);
             default -> Double.NaN;
         };
     }
